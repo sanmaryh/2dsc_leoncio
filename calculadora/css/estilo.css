@@ -8,3 +8,18 @@ body {
     justify-content: center;
     background-color: #a390f8;
 }
+.app {
+    background-color: #fbecff;
+    padding: 20px;
+    border-radius: 12px;
+}
+input{
+    padding: 8px;
+    margin: 8px 0;
+    outline: none;
+}
+ #btn-calcular {
+    background-color: rgb(194, 131, 253);
+    color #ffff;
+    padding: 12px
+  }
