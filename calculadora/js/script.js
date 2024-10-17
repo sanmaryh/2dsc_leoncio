@@ -13,14 +13,22 @@ function calcular(){
     const n1 = Number (numero1.value)
     const n2 = Number (numero2.value)
    if(typeof n1 === `number` && typeof n2 === `number`) {
-    const adicao = `A soma de ${n1} e ${n2} = ${n1+n2}`
-    alert(adicao)
+    const add = `A soma de ${n1} e ${n2} = ${n1+n2}`
+    const sub = `A subtração de ${n1} e ${n2} = ${n1-n2}`
+    const multi = `A multiplicação de ${n1} e ${n2} = ${n1+n2}`
+    const div = `A divisão de ${n1} e ${n2} = ${n1+n2}`
+    //alert(add)
+    adicao.innerHTML = add
+    subtracao.innerHTML = sub
+    multiplicacao.innerHTML = multi
+    divisao.innerHTML = div
    }else {
     alert('Por favor, digite um número correto')
  }
  // alert('Resultado:' + resultado)
 }
 // ADICIONA ESCUTAR EVENTOS
-btnCalcular.addEventListener('click',function(){
+btnCalcular.addEventListener('click',function(evento){
+    evento.preventDefault()// TIRAR O COMPORTAMENTO PADRÃO
     calcular()
 })
