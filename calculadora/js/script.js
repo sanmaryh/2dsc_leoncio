@@ -1,4 +1,5 @@
-// FAZ REFERÊNCIA AOS ELEMENTOS DOM
+// FAZ REFERÊNCIA AOS ELEMENTOS DA HIERARQUIA DA ARVORE HTML DOM forma como manipulamos botões e caixas de texto
+//document.getElementById
 const numero1 = document.querySelector('#numero1')
 const numero2 = document.querySelector('#numero2')
 const btnCalcular = document.querySelector('#btn-calcular')
@@ -9,6 +10,7 @@ const multiplicacao = document.querySelector('.multiplicacao')
 const divisao = document.querySelector('.divisao')
 
 // CRIA A FUNÇÃO CALCULAR
+//function c/ retorno- Não imprime valor
 function calcular(){
     const n1 = Number (numero1.value)
     const n2 = Number (numero2.value)
@@ -32,3 +34,8 @@ btnCalcular.addEventListener('click',function(evento){
     evento.preventDefault()// TIRAR O COMPORTAMENTO PADRÃO
     calcular()
 })
+
+//BOM MODELO DE OBJETO DO NAVEGADOR, eventos e funções,  como interagimos com o navegador. Usado para pedir permissões para enviar notificações, consultar a URL atual, verificar as dimensões da janela ou a geolocalização do usuário
+//console.log()
+//ev js açoes q permitem ao usuario interagir com o app
+
